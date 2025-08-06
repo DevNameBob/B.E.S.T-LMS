@@ -1,0 +1,37 @@
+.container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.tabBar {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  background-color: #f0f4f8;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.tab:hover {
+  background-color: #e6f0ff;
+}
+
+.active {
+  background-color: #d0e7ff;
+  color: #0078d4;
+  font-weight: 600;
+}
+
+.content {
+  padding: 1rem;
+}

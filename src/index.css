@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 0.4;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.glow-butterfly {
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4))
+          drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+}
+
+/* index.css */
+.btn {
+  @apply px-2 py-1 border rounded hover:bg-gray-100 text-sm;
+}
