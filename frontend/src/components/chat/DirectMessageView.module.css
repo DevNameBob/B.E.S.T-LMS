@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #f9fbfc;
+}
+
+.messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+.incoming {
+  align-self: flex-start;
+  background-color: #e6f0ff;
+}
+
+.outgoing {
+  align-self: flex-end;
+  background-color: #d0e7ff;
+}
+
+.text {
+  font-size: 0.9rem;
+}
+
+.timestamp {
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 0.2rem;
+  text-align: right;
+}
+
+.inputBar {
+  display: flex;
+  padding: 0.75rem;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.inputBar input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 0.5rem;
+}
+
+.inputBar button {
+  padding: 0.6rem 1rem;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

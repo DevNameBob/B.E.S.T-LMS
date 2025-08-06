@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.createButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.createButton:hover {
+  background-color: #0056b3;
+}
+
+.roomList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.roomItem {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 0.8rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.roomItem:hover {
+  background-color: #eef4ff;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #d0e7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #0078d4;
+  margin-right: 0.8rem;
+}
+
+.roomContent {
+  flex: 1;
+}
+
+.roomName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.roomDescription {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

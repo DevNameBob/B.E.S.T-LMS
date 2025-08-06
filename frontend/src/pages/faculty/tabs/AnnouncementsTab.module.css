@@ -1,0 +1,130 @@
+/* Container layout */
+.container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Pill-style tab toggle */
+.tabBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+  border-radius: 999px;
+  padding: 0.3rem;
+  width: fit-content;
+  margin: 0 auto 1.5rem auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.tabButton {
+  flex: 1;
+  width: 100px;
+  height: 32px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.tabButton:hover {
+  background-color: #e5e7eb;
+}
+
+.activeTab {
+  background-color: #2196f3;
+  color: white;
+}
+
+/* Header and layout */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #1976d2;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+/* Sub-tabs for Rooms vs Friends */
+.subTabBar {
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.subTab {
+  flex: 1;
+  padding: 0.75rem;
+  text-align: center;
+  background-color: #f0f4f8;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.subTab:hover {
+  background-color: #e6f0ff;
+}
+
+.active {
+  background-color: #d0e7ff;
+  color: #0078d4;
+  font-weight: 600;
+}
+
+/* DM Chat Header */
+.chatHeader {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #f0f4f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #0078d4;
+  margin-right: 1rem;
+}
+
+.chatTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
